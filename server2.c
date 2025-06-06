@@ -6,7 +6,7 @@
 #define MAX_CLIENT 10
 #pragma comment(lib, "ws2_32.lib") // LINK WITH WINSOCK LIBRARY.
 
-CRITICAL_SECTION cs;
+CRITICAL_SECTION cs; // It is used for synchronization of a variabe or any resource to avoide race condition or crash.
 
 int client_count = 0;
 
